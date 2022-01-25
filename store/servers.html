@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda | Servers</title>
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <header>
+      <a href="Inicio.html" class="logo"><img src="../assets/images/logo.png"></a>
+      <div class="navigation">
+        <ul class="menu">
+          <div class="close-btn"></div>
+          <li class="menu-item"><a href="../inicio.html">Inicio</a></li>
+          <li class="menu-item"><a href="servers.html">Tienda</a></li>
+          <li class="menu-item">
+            <a class="sub-btn" >Servidores <i class="fas fa-angle-down"></i></a>
+            <ul class="sub-menu">
+              <li class="sub-item"><a >Rust Vanilla</a></li>
+              <li class="sub-item"><a >Rust Modded</a></li>
+              <li class="sub-item"><a >GTA RolePlay</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="https://dsc.gg/freakers" target="_BLANk">Discord</a></li>
+          <li class="menu-item"><a href="../Team.html">Nuestro equipo</a></li>
+          <li class="menu-item"><a href="../TerminosYCondiciones.html">Terminos y condiciones</a></li>
+        </ul>
+      </div>
+      <div class="menu-btn"></div>
+    </header>
+    
+    <section class="section-one">
+      <div class="cards">
+        <div class="card card1">
+            <div class="container">
+                <img src="../assets/images/vanilla.jpg" alt="Rust">
+            </div>
+            <div class="details">
+                <h3>Rust Vanilla</h3>
+                <a href="../Inicio.html">Ver catalogo</a>
+            </div>
+        </div>
+        <div class="card card2">
+            <div class="container">
+                <img src="../assets/images/modded.jpg" alt="Oxided">
+            </div>
+            <div class="details">
+                <h3>Rust Modded</h3>
+                <a href="modded.html">Ver catalogo</a>
+            </div>
+        </div>
+        <div class="card card3">
+            <div class="container">
+                <img src="../assets/images/gtarp.jpg" alt="GTA RP">
+            </div>
+            <div class="details">
+                <h3>GTA RolePlay</h3>
+                <a href="../Inicio.html">Ver catalogo</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <script type="text/javascript">
+    //jquery for toggle dropdown menus
+    $(document).ready(function(){
+      //toggle sub-menus
+      $(".sub-btn").click(function(){
+        $(this).next(".sub-menu").slideToggle();
+      });
+
+      //toggle more-menus
+      $(".more-btn").click(function(){
+        $(this).next(".more-menu").slideToggle();
+      });
+    });
+
+    //javascript for the responsive navigation menu
+    var menu = document.querySelector(".menu");
+    var menuBtn = document.querySelector(".menu-btn");
+    var closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+
+    //javascript for the navigation bar effects on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+    </script>
+
+  </body>
+</html>
