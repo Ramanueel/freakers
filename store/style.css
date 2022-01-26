@@ -328,7 +328,7 @@ header.sticky .menu-item .sub-menu{
 
   .close-btn{
     position: absolute;
-    background: url(assets/images/close.png)no-repeat;
+    background: url(../assets/images/close.png)no-repeat;
     width: 40px;
     height: 40px;
     background-size: 25px;
@@ -340,7 +340,7 @@ header.sticky .menu-item .sub-menu{
   }
 
   .menu-btn{
-    background: url(assets/images/menu.png)no-repeat;
+    background: url(../assets/images/menu.png)no-repeat;
     width: 40px;
     height: 40px;
     background-size: 30px;
