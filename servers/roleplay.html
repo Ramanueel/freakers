@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidores | RolePlay</title>
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <header>
+      <div href="../index.html" class="logo"><img src="../assets/images/logo.png"></div>
+      <div class="navigation">
+        <ul class="menu">
+          <div class="close-btn"></div>
+          <li class="menu-item"><a href="../index.html">Inicio</a></li>
+          <li class="menu-item"><a href="../store/servers.html">Tienda</a></li>
+          <li class="menu-item">
+            <a class="sub-btn">Servidores <i class="fas fa-angle-down"></i></a>
+            <ul class="sub-menu">
+              <li class="sub-item"><a href="vanilla.html">Rust Vanilla</a></li>
+              <li class="sub-item"><a href="modded.html">Rust Modded</a></li>
+              <li class="sub-item"><a href="roleplay.html">GTA RolePlay</a></li>
+            </ul>
+          </li>
+          <li class="menu-item"><a href="https://dsc.gg/freakers" target="_BLANk">Discord</a></li>
+          <li class="menu-item"><a href="../Team.html">Nuestro equipo</a></li>
+          <li class="menu-item"><a href="../TerminosYCondiciones.html">Terminos y condiciones</a></li>
+        </ul>
+      </div>
+      <div class="menu-btn"></div>
+    </header>
+
+    <div class="contenido">
+      <div class="sectio">
+        <img src="../assets/images/freakers.png">
+        <p style="color:#ffffff;">Bienvenidos a la seccion de Roleplay de Gta de la comunidad de FREAKERS.<br><br>
+          Es un orgullo y una satisfaccion inmensurable sumarle a la franquicia de servers de FREAKERS lo que se podria decir la "Joya de la Corona", un servidor por excelencia unico y sin precedentes a lo que se refiere el mundo del RolePLay.<br><br>
+          Es necesario dar contexto a lo anteriormente dicho explicando que este servidor contiene la cantidad de 693 scripts depurados hasta la ultima linea de codigo buscando el mejor rendimiento y optimizacion de los mismos, y ha llevado el tiempo de programacion y configuracion de "13 meses" hasta el momento, en los cuales mi persona, siendo el unico programador, diseñador, desarrollador, ha pasado por incontables noches sin dormir, frustraciones, alegrias, gloria, abandono, superacion, hambre y muchas emociones mas que han sido el pilar del surgimiento de un server sin predecentes.<br><br>
+          Este gran esfuerzo y trabajo ha dado como resultado para todo aquellos que ya son parte la aprobacion sin duda y la seguridad de ser algo fuera de serie.<br><br>
+          El trabajo que se ha realizado es totalmente puntilloso afirmando que cada complemento que se encuentra dentro del mismo funciona a la perfeccion sin ningun tipo de bugs, errores, ni situaciones inexplicables generando asi menores situaciones de reportes permitiendo como resultado la rapida moderacion y la tranquilidad de que cualquier situacion que requiera de un administrador sera por alguna situacion propia de los jugadores y proviniente del servidor en si.<br><br>
+          Este servidor esta pensado para ordenadores de gama media en adelante y con una buena conexion a internet, si bien el servidor esta dotado de un procesador I7 de 9na Generacion,32Gb de memoria y una placa de video GTX1660 OC Gaming y 300mb de conexion por fibra optica, es muy probable dado su contextura que si el usuario no cuenta con ciertos requisitos minimos la expericiencia de juego no se la aproiada.<br><br>
+          Es importante resaltar esto ya que la prioridad siempre desde un comienzo fue poder darle al usuario  una expericiencia unica de rol y no la ambiciosa situacion de tener una exagerada cantidad de usuario sumados en un server plagado de errores y con pocas posibilidades de hacer volar su imaginacion empleandola en el rol.<br><br>
+          La ciudad de FREAKERS cuenta con mas de 30 trabajos equilibrados para poder escoger a gusto sin tener una gran diferencia economica, se ha creado especialmente un sistema de alimentacion en el cual se puede hacer farm de materia prima como frutas, verduras, carnes y estas mismas convertirlas en alimentos los cuales tendran sus diferentes efectos al ingerirlos como tambien podran ser comercializados en los diferentes lugares o personas.<br><br>
+          El sistema economico esta basado en precio actuales del Argentinos con la modificacion de los sueldos para asi generar una economia equilibrada y amena permitiendo la adquisicion de los objetos que se encuentran dentro del mismo como por ejemplo Autos, Casas, Armas,etc.<br><br>
+          En el server podemos encontrar un casino unico forjado de la union de dos escenarios de Casinos, Fabelas, Obelisco, Cristo, Montaña Rusa, Autocine, Cine, Carcel, Hotel Continental y se podria seguir enumerando pero es mas sorpresivo el descrubir la ciudad por uno mismo.<br><br>
+          Hay muchisimas cosas que me gustaria incluir en esta descripcion pero prefiero que el amante de RolePlay se lleve una sorpresa al recorrer la flamante ciudad de FREAKERS.<br><br>
+          Es importante y no menor agradecer tambien a las pocas personas que sin interes y sin tener idea de lo que sea trataba me han acompañado , ayudado o facilitado complementos y por ende hecho mi labor en ciertos momentos mas ligero, para todos ellos muchas gracias.<br><br>
+          </p>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    //jquery for toggle dropdown menus
+    $(document).ready(function(){
+      //toggle sub-menus
+      $(".sub-btn").click(function(){
+        $(this).next(".sub-menu").slideToggle();
+      });
+
+      //toggle more-menus
+      $(".more-btn").click(function(){
+        $(this).next(".more-menu").slideToggle();
+      });
+    });
+
+    //javascript for the responsive navigation menu
+    var menu = document.querySelector(".menu");
+    var menuBtn = document.querySelector(".menu-btn");
+    var closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+
+    //javascript for the navigation bar effects on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    });
+    </script>
+
+  </body>
+</html>
